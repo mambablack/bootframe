@@ -18,8 +18,8 @@ public class ProviderTest {
 	
 	@Autowired
 	private IFreeResourceQuery query;
-	@Autowired
-	private RedisTemplate<String, String> redisTemplate;
+//	@Autowired
+//	private RedisTemplate<String, String> redisTemplate;
 
 	/**
 	 * 1、测试dubbo服务
@@ -35,7 +35,7 @@ public class ProviderTest {
 		}
 	}
 	
-	@Test
+//	@Test
 	public void redisTest(){
 		
 	}

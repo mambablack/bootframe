@@ -14,5 +14,6 @@
     <import resource="classpath:spring-boot-framework.xml"/>	 
  	<import resource="classpath:business-service.xml"/>	
  	<dubbo:application name="boot-provider"  />
+ 	<dubbo:monitor protocol="registry" />
     
 </beans>
