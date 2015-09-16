@@ -10,6 +10,8 @@ public class Main {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(DUBBO_PROVIDER_FILE);
 		context.start();
+		InitParam it = (InitParam)context.getBean("initParam");
+		System.out.println(it.getMy());
 		synchronized (Main.class) {
 			while (running)
 				try {

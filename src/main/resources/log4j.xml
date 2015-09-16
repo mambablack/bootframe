@@ -16,7 +16,7 @@
 		</layout>
 	</appender> -->
 	<appender name="LogFile" class="org.apache.log4j.DailyRollingFileAppender">
-    	<param name="File" value="../logs/provider.log" />
+    	<param name="File" value="/Users/wangmanco/Documents/tmp/provider.log" />
     	<param name="Append" value="true"/>
     	<param name="Encoding" value="utf-8"/>
     	<param name="DatePattern" value="'.'yyyy-MM-dd'.log'" /> 
@@ -67,6 +67,6 @@
 	<root>
 		<level value="debug" /><!-- 开发改为debug，上线要改回info -->
 		<appender-ref ref="default" />
-		<!-- <appender-ref ref="LogFile"/> -->
+		<appender-ref ref="LogFile"/>
 	</root>
 </log4j:configuration>
